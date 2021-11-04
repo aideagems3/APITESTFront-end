@@ -19,6 +19,7 @@ const Aiforpic = () => {
               console.log(reader.result)
               // convert image file to base64 
               setImg(reader.result)
+            
             }
             
           }
@@ -42,6 +43,8 @@ const Aiforpic = () => {
         uploaddata.append('Objects',null);
         uploaddata.append('Success',false);
         uploaddata.append('Time',null);
+        uploaddata.append('Lat',null);
+        uploaddata.append('Lng',null);
         // uploaddata.append('Boxespic',null);
         //why Img.name is error?
         // for (var pair of uploaddata.entries()) {
