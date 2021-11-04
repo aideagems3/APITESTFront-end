@@ -9,6 +9,9 @@
     "axios": "^0.21.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-geocode": "^0.2.3",
+    "react-google-autocomplete": "^2.4.3",
+    "react-google-maps": "^9.4.5",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },

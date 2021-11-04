@@ -1,7 +1,7 @@
 import './App.css';
 import React,{Component} from 'react';
 import Aiforpic from './Components/Aiforpic.js';
-
+import GPSlocation from './Components/GPS';
 
 class App extends Component {
 
@@ -10,7 +10,7 @@ class App extends Component {
     
     return(
       <div className="App">
-
+      <GPSlocation/>
       <Aiforpic/>
       
       </div>
