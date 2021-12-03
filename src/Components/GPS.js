@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import { Button,Card,Row,Col,Container,Navbar,Nav,Jumbotron,ProgressBar } from 'react-bootstrap';
 import {
     InfoWindow,
     withScriptjs,
@@ -9,6 +10,8 @@ import {
 
 import Geocode from 'react-geocode';
 Geocode.setApiKey('AIzaSyC9QhogybZ3u9oGs5fpxlSmVr1MCWwaA5c')
+
+
 
 const GPSlocation =() => {
   
@@ -43,7 +46,7 @@ const GPSlocation =() => {
         <Marker position={{ lat: -34.397, lng: 150.644 }}>
             <InfoWindow>
                 <div>
-                    hello info window
+                    Provincial Electricity Authority
                 </div>
             </InfoWindow>
         </Marker>
@@ -52,13 +55,15 @@ const GPSlocation =() => {
   ));
   
   return(
-      <div>
-        <MapWithAMarker
-        googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9QhogybZ3u9oGs5fpxlSmVr1MCWwaA5c&v=3.exp&libraries=geometry,drawing,places"
-        loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div style={{ height: `400px` }} />}
-        mapElement={<div style={{ height: `100%` }} />}
-        />
+      <div style={{backgroundColor:"#F8F8F8"}}>
+        
+          <MapWithAMarker
+          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9QhogybZ3u9oGs5fpxlSmVr1MCWwaA5c&v=3.exp&libraries=geometry,drawing,places"
+          loadingElement={<div style={{ height: `100%` }} />}
+          containerElement={<div style={{ height: `200px` }} />}
+          mapElement={<div style={{ height: `100%` }} />}
+          />
+        
       </div>
   )
 
